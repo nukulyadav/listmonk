@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -144,7 +144,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -231,14 +231,14 @@
       
     
     
-    
-    
       
+        
+        
       
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
@@ -447,6 +447,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#helm-chart-for-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helm chart for kubernetes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#3rd-party-hosting" class="md-nav__link">
     <span class="md-ellipsis">
       3rd party hosting
@@ -549,14 +558,14 @@
       
     
     
-    
-    
       
+        
+        
       
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
@@ -780,16 +789,18 @@
       
         
       
-    
-    
+        
+      
     
     
       
+        
+        
       
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
@@ -825,6 +836,27 @@
   
   <span class="md-ellipsis">
     Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apis/sdks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDKs and libs
   </span>
   
 
@@ -1001,14 +1033,14 @@
       
     
     
-    
-    
       
+        
+        
       
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
@@ -1073,14 +1105,14 @@
       
     
     
-    
-    
       
+        
+        
       
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
@@ -1291,6 +1323,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#helm-chart-for-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helm chart for kubernetes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#3rd-party-hosting" class="md-nav__link">
     <span class="md-ellipsis">
       3rd party hosting
@@ -1328,7 +1369,7 @@
 <p>See the "<a href="#tutorials">Tutorials</a>" section at the bottom for detailed guides. </p>
 <h2 id="binary">Binary<a class="headerlink" href="#binary" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Download the <a href="https://github.com/knadh/listmonk/releases">latest release</a> and extract the listmonk binary.</li>
+<li>Download the <a href="https://github.com/knadh/listmonk/releases">latest release</a> and extract the listmonk binary. <code>amd64</code> is the main one. It works for Intel and x86 CPUs.</li>
 <li><code>./listmonk --new-config</code> to generate config.toml. Then, edit the file.</li>
 <li><code>./listmonk --install</code> to install the tables in the Postgres DB.</li>
 <li>Run <code>./listmonk</code> and visit <code>http://localhost:9000</code>.</li>
@@ -1343,7 +1384,7 @@
 <h3 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h3>
 <h4 id="easy-docker-install">Easy Docker install<a class="headerlink" href="#easy-docker-install" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>listmonk-demo<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>listmonk-demo
-sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/knadh/listmonk/master/install-demo.sh<span class="k">)</span><span class="s2">&quot;</span>
+bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/knadh/listmonk/master/install-demo.sh<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div>
 <h4 id="manual-docker-install">Manual Docker install<a class="headerlink" href="#manual-docker-install" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-O<span class="w"> </span>docker-compose.yml<span class="w"> </span>https://raw.githubusercontent.com/knadh/listmonk/master/docker-compose.yml
@@ -1357,7 +1398,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 <h4 id="easy-docker-install_1">Easy Docker install<a class="headerlink" href="#easy-docker-install_1" title="Permanent link">&para;</a></h4>
 <p>This setup is recommended if you want to <em>quickly</em> setup <code>listmonk</code> in production.</p>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>listmonk<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>listmonk
-sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/knadh/listmonk/master/install-prod.sh<span class="k">)</span><span class="s2">&quot;</span>
+bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/knadh/listmonk/master/install-prod.sh<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div>
 <p>The above shell script performs the following actions:</p>
 <ul>
@@ -1445,6 +1486,18 @@ sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</spa
 </ol>
 <h2 id="release-candidate-rc">Release candidate (RC)<a class="headerlink" href="#release-candidate-rc" title="Permanent link">&para;</a></h2>
 <p>The <code>master</code> branch with bleeding edge changes is periodically built and published as <code>listmonk/listmonk:rc</code> on DockerHub. To run the latest pre-release version, replace all instances of <code>listmonk/listmonk:latest</code> with <code>listmonk/listmonk:rc</code> in the docker-compose.yml file and follow the Docker installation steps above. While it is generally safe to run release candidate versions, they may have issues that only get resolved in a general release.</p>
+<h2 id="helm-chart-for-kubernetes">Helm chart for kubernetes<a class="headerlink" href="#helm-chart-for-kubernetes" title="Permanent link">&para;</a></h2>
+<p><img alt="Version: 0.1.0" src="https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square" /> <img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square" /> <img alt="AppVersion: 3.0.0" src="https://img.shields.io/badge/AppVersion-3.0.0-informational?style=flat-square" /></p>
+<p>A helm chart for easily installing listmonk on a kubernetes cluster is made available by community <a href="https://github.com/th0th/helm-charts/tree/main/charts/listmonk">here</a>.</p>
+<p>In order to use the helm chart, you can configure <code>values.yaml</code> according to your needs, and then run the following command:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>helm<span class="w"> </span>upgrade<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--create-namespace<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--install<span class="w"> </span>listmonk<span class="w"> </span>listmonk<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--namespace<span class="w"> </span>listmonk<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--repo<span class="w"> </span>https://th0th.github.io/helm-charts<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--values<span class="w"> </span>values.yaml<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--version<span class="w"> </span><span class="m">0</span>.1.0
+</code></pre></div>
 <h2 id="3rd-party-hosting">3rd party hosting<a class="headerlink" href="#3rd-party-hosting" title="Permanent link">&para;</a></h2>
 <p><a href="https://dash.elest.io/deploy?soft=Listmonk&id=237"><img height=33 src=https://github.com/elestio-examples/wordpress/raw/main/deploy-on-elestio.png alt="Deploy on Elestio" style="max-width: 150px;"></a>
 <br />
@@ -1452,7 +1505,9 @@ sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</spa
 <br />
 <a href="https://railway.app/new/template/listmonk"><img src="https://railway.app/button.svg" alt="One-click deploy on Railway" style="max-width: 150px;" /></a>
 <br />
-<a href="https://repocloud.io/details/?app_id=217"><img src="https://d16t0pc4846x52.cloudfront.net/deploy.png" alt="Deploy at RepoCloud" style="max-width: 150px;"/></a></p>
+<a href="https://repocloud.io/details/?app_id=217"><img src="https://d16t0pc4846x52.cloudfront.net/deploy.png" alt="Deploy at RepoCloud" style="max-width: 150px;"/></a>
+<br />
+<a href="https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dlistmonk"><img src="https://cdn.jsdelivr.net/gh/labring-actions/templates@main/Deploy-on-Sealos.svg" alt="Deploy on Sealos" style="max-width: 150px;"/></a></p>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/knadh/listmonk/issues/120#issuecomment-1421838533">Informal step-by-step on how to get started with Listmonk using <em>Railway</em></a></li>
@@ -1521,7 +1576,7 @@ sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</spa
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
